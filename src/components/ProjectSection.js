@@ -53,6 +53,8 @@ const useStyles = makeStyles(theme => ({
     width: "90%",
   },
   ProjDiv: {
+    paddingTop: 14,
+    paddingBottom: 14,
     [theme.breakpoints.up("md")]: {
       width: "82%",
       marginLeft: "auto",
