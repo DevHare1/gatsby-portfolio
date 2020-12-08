@@ -53,9 +53,11 @@ const useStyles = makeStyles(theme => ({
     width: "90%",
   },
   ProjDiv: {
-    width: "82%",
-    marginLeft: "auto",
-    marginRight: "auto",
+    [theme.breakpoints.up("md")]: {
+      width: "82%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    },
   },
 }))
 
@@ -84,6 +86,7 @@ export default function ScrollableTabsButtonAuto() {
           <Tab label="HTML" {...a11yProps(2)} />
           <Tab label="CSS" {...a11yProps(3)} />
           <Tab label="Javascript" {...a11yProps(4)} />
+          <Tab label="React" {...a11yProps(4)} />
         </Tabs>
       </div>
       <TabPanel value={value} index={0}>
