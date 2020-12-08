@@ -19,10 +19,8 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     justifyItems: "center",
-    justifyContent: "space-around",
   },
   paper: {
-    padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
     [theme.breakpoints.down("md")]: {
