@@ -1,7 +1,19 @@
 import React from "react"
-import "./headerStyles.css"
 import Sologo from "../images/my-logo.png"
+import { makeStyles } from "@material-ui/core/styles"
+
+const useStyles = makeStyles({
+  coverLogo: {
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
+    paddingTop: "3%",
+    width: "80%",
+    maxWidth: 1080,
+  },
+})
 
 export default function Header() {
-  return <img className="cover-logo" src={Sologo} atl="logo" />
+  const classes = useStyles()
+  return <img className={classes.coverLogo} src={Sologo} atl="logo" />
 }
