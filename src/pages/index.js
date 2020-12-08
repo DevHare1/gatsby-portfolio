@@ -1,15 +1,12 @@
 import React from "react"
 import Header from "../components/Header"
-import SimpleTabs from "../components/ProjectSection"
 import "../styles.css"
 import Background from "../images/merry-christmas.jpg"
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles"
 import theme from "../gatsby-theme-material-ui-top-layout/theme"
-import OppositeContentTimeline from "../components/Timeline"
-import LinkedIn from "../images/linkedin.svg"
-import Github from "../images/github-square.svg"
-import Mail from "../images/envelope-square.svg"
-import Phone from "../images/phone-square-alt.svg"
+import About from "../components/AboutDiv"
+import Contact from "../components/Contact"
+import Project from "../components/ProjectDiv"
 
 const useStyles = makeStyles({
   cover: {
@@ -72,43 +69,9 @@ export default function Home() {
         <div className={classes.cover}>
           <Header />
         </div>
-
-        <div className={classes.aboutSect} id="about">
-          <h2 className={classes.aboutHead}>My Coding Journey</h2>
-          <OppositeContentTimeline />
-        </div>
-        <div className={classes.projectSect} id="projects">
-          <h2 className={classes.projectsHead}>Portfolio</h2>
-          <SimpleTabs />
-        </div>
-        <div className={classes.contact}>
-          <div className={classes.contactSect} id="contact">
-            <a href="tel: (737)932-4800">
-              <img
-                src={Phone}
-                alt="Phone Link"
-                className={classes.socialLink}
-              />
-            </a>
-            <a href="mailto: haredevco@gmail.com">
-              <img src={Mail} alt="Email Link" className={classes.socialLink} />
-            </a>
-            <a href="https://www.linkedin.com/in/devanhare/">
-              <img
-                src={LinkedIn}
-                alt="LinkedIn Link"
-                className={classes.socialLink}
-              />
-            </a>
-            <a href="https://github.com/DevHare1">
-              <img
-                src={Github}
-                alt="Github Link"
-                className={classes.socialLink}
-              />
-            </a>
-          </div>
-        </div>
+        <About />
+        <Project />
+        <Contact />
       </div>
     </ThemeProvider>
   )
