@@ -2,7 +2,7 @@ import React from "react"
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles"
 import OppositeContentTimeline from "../components/Timeline"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   aboutSect: {
     maxWidth: 1080,
     marginRight: "auto",
@@ -17,8 +17,11 @@ const useStyles = makeStyles({
     marginLeft: "auto",
     paddingBottom: "5%",
     maxWidth: 1080,
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: "7vh",
+    },
   },
-})
+}))
 
 export default function Home() {
   const classes = useStyles()

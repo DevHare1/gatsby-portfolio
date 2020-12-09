@@ -9,13 +9,13 @@ const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
     justifyItems: "center",
-    justifyContent: "space-around",
   },
   paper: {
-    padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
-    maxWidth: 350,
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+    },
   },
 }))
 
