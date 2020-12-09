@@ -23,7 +23,7 @@ const modal = {
   modalTitle: "Walker EyeCare",
   modalDescription:
     "For this project I built a website, provided content, optimized for SEO, and I’m currently hosting/managing the website. This was a site for a client in Duncan, OK that wanted to showcase their services, as well as offering paperwork to new patients. It was built with Wordpress using the Divi Theme.",
-  modalurl: "https://johnsfamilytherapy.com/",
+  modalurl: "https://timwalkereyecare.com/",
 }
 
 //for card
