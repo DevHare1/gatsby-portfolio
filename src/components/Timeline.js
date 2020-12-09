@@ -102,7 +102,7 @@ export default function OppositeContentTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <Typography className={classes.timelineText}>
-              Shortly after working with Square Six I realized that I needed to
+              Shortly after working with Square Six, I realized that I needed to
               expand my development knowledge and started adding libraries like
               React and Angular to my toolbelt. This site is actually built with
               Gatsby and deployed with Vercel.
