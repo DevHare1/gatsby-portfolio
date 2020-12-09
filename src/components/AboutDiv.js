@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: "5%",
     maxWidth: 1080,
     [theme.breakpoints.down("xs")]: {
-      paddingTop: "7vh",
+      paddingTop: "10vh",
     },
   },
 }))

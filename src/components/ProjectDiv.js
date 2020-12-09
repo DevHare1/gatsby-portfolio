@@ -3,7 +3,7 @@ import SimpleTabs from "../components/ProjectSection"
 import "../styles.css"
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   projectsHead: {
     textAlign: "center",
     fontWeight: 200,
@@ -14,7 +14,13 @@ const useStyles = makeStyles({
     paddingBottom: "5%",
     maxWidth: 1080,
   },
-})
+  projectSect: {
+    paddingBottom: "2%",
+    [theme.breakpoints.down("xs")]: {
+      paddingBottom: "10%",
+    },
+  },
+}))
 
 export default function Home() {
   const classes = useStyles()
