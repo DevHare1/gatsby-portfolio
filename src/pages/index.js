@@ -8,12 +8,12 @@ import About from "../components/AboutDiv"
 import Contact from "../components/Contact"
 import Project from "../components/ProjectDiv"
 import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import BackgroundImage from "gatsby-background-image"
+
 import Navbar from "../components/Navbar"
 
 const useStyles = makeStyles({
   cover: {
-    backgroundImage: `url(${Background})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     minHeight: "100vh",
@@ -30,8 +30,14 @@ export default function Home({ data }) {
     <ThemeProvider theme={theme}>
       <div className={classes.site}>
         <div className={classes.cover}>
-          <Navbar />
-          <Header />
+          <BackgroundImage
+            Tag={`section`}
+            id={`test`}
+            fluid={data.background.childImageSharp.fluid}
+          >
+            <Navbar />
+            <Header data={data} />
+          </BackgroundImage>
         </div>
         <About />
         <Project />
@@ -41,7 +47,7 @@ export default function Home({ data }) {
   )
 }
 
-/*export const query = graphql`
+export const query = graphql`
   query {
     logo: file(relativePath: { eq: "my-logo.png" }) {
       childImageSharp {
@@ -50,5 +56,12 @@ export default function Home({ data }) {
         }
       }
     }
+    background: file(relativePath: { eq: "merry-christmas.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
   }
-`*/
+`

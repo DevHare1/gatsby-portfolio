@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: "2rem",
     marginRight: "auto",
     marginLeft: "auto",
-    paddingBottom: "5%",
+    paddingBottom: "3%",
     maxWidth: 1080,
   },
   projectSect: {

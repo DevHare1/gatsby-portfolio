@@ -2,6 +2,7 @@ import React from "react"
 import Sologo from "../images/my-logo.png"
 import { makeStyles } from "@material-ui/core/styles"
 import Button from "@material-ui/core/Button"
+import Img from "gatsby-image"
 
 const useStyles = makeStyles(theme => ({
   coverLogo: {
@@ -23,11 +24,13 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function Header() {
+export default function Header({ data }) {
   const classes = useStyles()
   return (
     <div id="top" className="coverDiv">
-      <img className={classes.coverLogo} src={Sologo} atl="logo" />
+      <div className={classes.coverLogo}>
+        <Img fluid={data.logo.childImageSharp.fluid} atl="logo" />
+      </div>
     </div>
   )
 }
