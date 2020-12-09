@@ -30,12 +30,12 @@ export default function Home({ data }) {
     <ThemeProvider theme={theme}>
       <div className={classes.site}>
         <div className={classes.cover}>
+          <Navbar />
           <BackgroundImage
             Tag={`section`}
             id={`test`}
             fluid={data.background.childImageSharp.fluid}
           >
-            <Navbar />
             <Header data={data} />
           </BackgroundImage>
         </div>
