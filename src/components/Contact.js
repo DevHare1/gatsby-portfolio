@@ -5,6 +5,7 @@ import LinkedIn from "../images/linkedin.svg"
 import Github from "../images/github-square.svg"
 import Mail from "../images/envelope-square.svg"
 import Phone from "../images/phone-square-alt.svg"
+import { Typography } from "@material-ui/core"
 
 const useStyles = makeStyles({
   contact: {
@@ -17,7 +18,7 @@ const useStyles = makeStyles({
     marginRight: "auto",
     marginLeft: "auto",
     paddingBottom: 7,
-    paddingTop: 7,
+    paddingTop: 10,
   },
 
   socialLink: {
@@ -32,6 +33,9 @@ export default function Contact() {
   return (
     <div className={classes.contact}>
       <div className={classes.contactSect} id="contact">
+        <Typography variant="h6" color="secondary">
+          Let's Connect
+        </Typography>
         <a href="tel: (737)932-4800">
           <img src={Phone} alt="Phone Link" className={classes.socialLink} />
         </a>

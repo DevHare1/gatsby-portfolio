@@ -5,7 +5,6 @@ import OppositeContentTimeline from "../components/Timeline"
 const useStyles = makeStyles({
   aboutSect: {
     maxWidth: 1080,
-    margin: "5% 3%",
     marginRight: "auto",
     marginLeft: "auto",
   },
@@ -13,12 +12,11 @@ const useStyles = makeStyles({
     textAlign: "center",
     fontWeight: 200,
     fontSize: "2rem",
-    marginTop: "10vh",
+    paddingTop: "14vh",
     marginRight: "auto",
     marginLeft: "auto",
-    marginBottom: "5%",
+    paddingBottom: "5%",
     maxWidth: 1080,
-    paddingBottom: "2%",
   },
 })
 
@@ -26,7 +24,7 @@ export default function Home() {
   const classes = useStyles()
 
   return (
-    <div className={classes.aboutSect} id="timeline">
+    <div className={classes.aboutSect} id="about">
       <h2 className={classes.aboutHead}>My Coding Journey</h2>
       <OppositeContentTimeline />
     </div>

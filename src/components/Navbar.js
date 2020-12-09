@@ -1,29 +1,47 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Toolbar, Typography } from "@material-ui/core"
+import { Toolbar, Typography, AppBar } from "@material-ui/core"
 import "../pages/index"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
   },
   menuDiv: {
-    margin: "auto",
+    margin: "auto 80px",
     cursor: "pointer",
+    [theme.breakpoints.down("sm")]: {
+      margin: "auto 40px",
+    },
+    [theme.breakpoints.down("xs")]: {
+      margin: "auto 8px",
+    },
   },
   menuButton: {
-    color: "#f2f2f2",
+    color: "#303030",
     fontSize: 18,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+    },
   },
   title: {
     flexGrow: 1,
   },
-  tool: {
+  navDiv: {
     maxWidth: 1080,
+    display: "flex",
+    marginRight: "auto",
+    marginLeft: "auto",
+  },
+  tool: {
     marginRight: "auto",
     marginLeft: "auto",
     padding: 0,
     marginBottom: 0,
+  },
+  app: {
+    backgroundColor: "#f1f1f1",
   },
 }))
 
@@ -32,28 +50,44 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <Toolbar className={classes.tool}>
-        <div className={classes.menuDiv}>
-          <Typography variant="h6" className={classes.menuButton}>
-            Home
-          </Typography>
-        </div>
-        <div className={classes.menuDiv}>
-          <Typography variant="h6" className={classes.menuButton}>
-            About
-          </Typography>
-        </div>
-        <div className={classes.menuDiv}>
-          <Typography variant="h6" className={classes.menuButton}>
-            Portfolio
-          </Typography>
-        </div>
-        <div className={classes.menuDiv}>
-          <Typography variant="h6" className={classes.menuButton}>
-            Contact
-          </Typography>
-        </div>
-      </Toolbar>
+      <React.Fragment className={classes.tool}>
+        <AppBar position="fixed" className={classes.app}>
+          <Toolbar>
+            <div className={classes.navDiv}>
+              <div className={classes.menuDiv} onClick={() => scrollTo("#top")}>
+                <Typography variant="h6" className={classes.menuButton}>
+                  Home
+                </Typography>
+              </div>
+              <div
+                className={classes.menuDiv}
+                onClick={() => scrollTo("#about")}
+              >
+                <Typography variant="h6" className={classes.menuButton}>
+                  About
+                </Typography>
+              </div>
+              <div
+                className={classes.menuDiv}
+                onClick={() => scrollTo("#portfolio")}
+              >
+                <Typography variant="h6" className={classes.menuButton}>
+                  Portfolio
+                </Typography>
+              </div>
+
+              <div
+                className={classes.menuDiv}
+                onClick={() => scrollTo("#contact")}
+              >
+                <Typography variant="h6" className={classes.menuButton}>
+                  Contact
+                </Typography>
+              </div>
+            </div>
+          </Toolbar>
+        </AppBar>
+      </React.Fragment>
     </div>
   )
 }
