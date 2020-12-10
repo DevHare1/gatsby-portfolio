@@ -1,7 +1,5 @@
 import React from "react"
-import Sologo from "../images/my-logo.png"
 import { makeStyles } from "@material-ui/core/styles"
-import Button from "@material-ui/core/Button"
 import Img from "gatsby-image"
 
 const useStyles = makeStyles(theme => ({

@@ -20,6 +20,7 @@ function getModalStyle() {
 
 const modal = {
   modalImage: MobileFirst,
+  modalAlt: "Mobile First Project",
   modalTitle: "Mobile First Responsive Website",
   modalDescription:
     "This was one of my first Team Treehouse Front End Techdegree Projects. I built a mobile first website to practice using a mobile-first CSS approach.",
@@ -148,7 +149,11 @@ export default function ButtonBases() {
   //Modal Content
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <img src={modal.modalImage} className={classes.modalImage} />
+      <img
+        src={modal.modalImage}
+        alt={modal.modalAlt}
+        className={classes.modalImage}
+      />
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>

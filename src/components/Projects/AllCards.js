@@ -13,7 +13,6 @@ import WebAppDash from "../ProjectCards/WebApp"
 import APIGen from "../ProjectCards/APIGen"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
-import { Autocomplete } from "@material-ui/lab"
 
 const useStyles = makeStyles(theme => ({
   root: {

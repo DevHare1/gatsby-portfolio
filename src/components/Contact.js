@@ -1,6 +1,6 @@
 import React from "react"
 import "../styles.css"
-import { makeStyles, ThemeProvider } from "@material-ui/core/styles"
+import { makeStyles } from "@material-ui/core/styles"
 import LinkedIn from "../images/linkedin.svg"
 import Github from "../images/github-square.svg"
 import Mail from "../images/envelope-square.svg"

@@ -20,6 +20,7 @@ function getModalStyle() {
 
 const modal = {
   modalImage: WalkerEye,
+  modalAlt: "Walker EyeCare Project",
   modalTitle: "Walker EyeCare",
   modalDescription:
     "For this project I built a website, provided content, optimized for SEO, and I’m currently hosting/managing the website. This was a site for a client in Duncan, OK that wanted to showcase their services, as well as offering paperwork to new patients. It was built with Wordpress using the Divi Theme.",
@@ -147,7 +148,11 @@ export default function ButtonBases() {
   //Modal Content
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <img src={modal.modalImage} className={classes.modalImage} />
+      <img
+        src={modal.modalImage}
+        alt={modal.modalAlt}
+        className={classes.modalImage}
+      />
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>

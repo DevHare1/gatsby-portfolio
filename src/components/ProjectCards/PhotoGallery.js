@@ -20,6 +20,7 @@ function getModalStyle() {
 
 const modal = {
   modalImage: PhotoGallery,
+  modalAlt: "Interactive Photo Gallery Project",
   modalTitle: "Interactive Photo Gallery",
   modalDescription:
     "This was one of my Team Treehouse Front End Techdegree Projects. I built a Photo Gallery using flexbox and used jquery to create a lightbox when photos are clicked. I also created a search function using JavaScript based on image titles.",
@@ -148,7 +149,11 @@ export default function ButtonBases() {
   //Modal Content
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <img src={modal.modalImage} className={classes.modalImage} />
+      <img
+        src={modal.modalImage}
+        alt={modal.modalAlt}
+        className={classes.modalImage}
+      />
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>

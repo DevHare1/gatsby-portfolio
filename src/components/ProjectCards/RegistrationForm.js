@@ -20,6 +20,7 @@ function getModalStyle() {
 
 const modal = {
   modalImage: RegForm,
+  modalAlt: "Online Registration Form Project",
   modalTitle: "Online Registration Form",
   modalDescription:
     "This was one of my Team Treehouse Front End Techdegree Projects. I built an online registration form with html and css. All this form needs is connection to a server to work properly.",
@@ -148,7 +149,11 @@ export default function ButtonBases() {
   //Modal Content
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <img src={modal.modalImage} className={classes.modalImage} />
+      <img
+        src={modal.modalImage}
+        alt={modal.modalAlt}
+        className={classes.modalImage}
+      />
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>

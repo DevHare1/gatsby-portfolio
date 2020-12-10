@@ -1,7 +1,7 @@
 import React from "react"
 import SimpleTabs from "../components/ProjectSection"
 import "../styles.css"
-import { makeStyles, ThemeProvider } from "@material-ui/core/styles"
+import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
   projectsHead: {

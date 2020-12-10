@@ -81,7 +81,6 @@ export default function ScrollableTabsButtonAuto() {
           scrollButtons="on"
           variant="scrollable"
           aria-label="scrollable auto tabs example"
-          centered
         >
           <Tab label="All" {...a11yProps(0)} />
           <Tab label="Clients" {...a11yProps(1)} />

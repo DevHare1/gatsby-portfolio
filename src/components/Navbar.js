@@ -50,43 +50,52 @@ export default function Navbar() {
 
   return (
     <div className={classes.root}>
-      <React.Fragment className={classes.tool}>
-        <AppBar position="fixed" className={classes.app}>
-          <Toolbar>
-            <div className={classes.navDiv}>
-              <div className={classes.menuDiv} onClick={() => scrollTo("#top")}>
-                <Typography variant="h6" className={classes.menuButton}>
-                  Home
-                </Typography>
-              </div>
-              <div
-                className={classes.menuDiv}
-                onClick={() => scrollTo("#about")}
-              >
-                <Typography variant="h6" className={classes.menuButton}>
-                  About
-                </Typography>
-              </div>
-              <div
-                className={classes.menuDiv}
-                onClick={() => scrollTo("#portfolio")}
-              >
-                <Typography variant="h6" className={classes.menuButton}>
-                  Portfolio
-                </Typography>
-              </div>
+      <React.Fragment>
+        <div className={classes.tool}>
+          <AppBar position="fixed" className={classes.app}>
+            <Toolbar>
+              <div className={classes.navDiv}>
+                <div
+                  className={classes.menuDiv}
+                  onClick={() => scrollTo("#top")}
+                  role="button"
+                >
+                  <Typography variant="h6" className={classes.menuButton}>
+                    Home
+                  </Typography>
+                </div>
+                <div
+                  className={classes.menuDiv}
+                  onClick={() => scrollTo("#about")}
+                  role="button"
+                >
+                  <Typography variant="h6" className={classes.menuButton}>
+                    About
+                  </Typography>
+                </div>
+                <div
+                  className={classes.menuDiv}
+                  onClick={() => scrollTo("#portfolio")}
+                  role="button"
+                >
+                  <Typography variant="h6" className={classes.menuButton}>
+                    Portfolio
+                  </Typography>
+                </div>
 
-              <div
-                className={classes.menuDiv}
-                onClick={() => scrollTo("#contact")}
-              >
-                <Typography variant="h6" className={classes.menuButton}>
-                  Contact
-                </Typography>
+                <div
+                  className={classes.menuDiv}
+                  onClick={() => scrollTo("#contact")}
+                  role="button"
+                >
+                  <Typography variant="h6" className={classes.menuButton}>
+                    Contact
+                  </Typography>
+                </div>
               </div>
-            </div>
-          </Toolbar>
-        </AppBar>
+            </Toolbar>
+          </AppBar>
+        </div>
       </React.Fragment>
     </div>
   )

@@ -1,5 +1,5 @@
 import React from "react"
-import { makeStyles, ThemeProvider } from "@material-ui/core/styles"
+import { makeStyles } from "@material-ui/core/styles"
 import OppositeContentTimeline from "../components/Timeline"
 
 const useStyles = makeStyles(theme => ({

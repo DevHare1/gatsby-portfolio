@@ -20,6 +20,7 @@ function getModalStyle() {
 
 const modal = {
   modalImage: Overland,
+  modalAlt: "Overland Rentals Project",
   modalTitle: "Overland Rentals",
   modalDescription:
     "For this project I partnered with Square Six to build a website and optimize for SEO. This was a RV rental and e-commerce website. This site was built on Wordpress was built using a WooCommerce and a Rental Theme that we rebuilt.",
@@ -147,7 +148,11 @@ export default function ButtonBases() {
   //Modal Content
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <img src={modal.modalImage} className={classes.modalImage} />
+      <img
+        src={modal.modalImage}
+        alt={modal.modalAlt}
+        className={classes.modalImage}
+      />
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>

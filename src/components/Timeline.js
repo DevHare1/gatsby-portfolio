@@ -8,7 +8,6 @@ import TimelineDot from "@material-ui/lab/TimelineDot"
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent"
 import Typography from "@material-ui/core/Typography"
 import { makeStyles } from "@material-ui/core/styles"
-import { Fade } from "@material-ui/core"
 
 const useStyles = makeStyles(theme => ({
   timelineText: {
