@@ -8,6 +8,7 @@ import TimelineDot from "@material-ui/lab/TimelineDot"
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent"
 import Typography from "@material-ui/core/Typography"
 import { makeStyles } from "@material-ui/core/styles"
+import { Fade } from "@material-ui/core"
 
 const useStyles = makeStyles(theme => ({
   timelineText: {
@@ -103,7 +104,7 @@ export default function OppositeContentTimeline() {
           <TimelineContent>
             <Typography className={classes.timelineText}>
               Shortly after starting at Square Six, I became even more motivated
-              to expand my development knowledge and started adding libraries
+              to expand my development knowledge and started adding frameworks
               like React and Angular to my toolbelt. This site is actually built
               with Gatsby and deployed with Vercel.
             </Typography>
