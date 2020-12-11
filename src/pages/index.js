@@ -8,6 +8,8 @@ import Contact from "../components/Contact"
 import Project from "../components/ProjectDiv"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import SEO from "../components/seo"
+import Screenshot from "./images/Screenshot.png"
 
 import Navbar from "../components/Navbar"
 
@@ -27,6 +29,11 @@ export default function Home({ data }) {
 
   return (
     <ThemeProvider theme={theme}>
+      <SEO
+        title="Devan Hare's Portfolio"
+        description="I am a Front End Developer seeking a full time postion using React."
+        image={Screenshot}
+      />
       <div className={classes.site}>
         <div className={classes.cover}>
           <Navbar />
