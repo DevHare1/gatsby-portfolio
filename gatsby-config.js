@@ -6,7 +6,7 @@
 const path = require(`path`)
 module.exports = {
   siteMetadata: {
-    title: `Devan's Awesome Portfolio`,
+    title: `Devan Hare's Portfolio`,
   },
   /* Your site config here */
   plugins: [
