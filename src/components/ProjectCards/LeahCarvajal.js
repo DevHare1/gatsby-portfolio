@@ -156,7 +156,12 @@ export default function ButtonBases() {
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>
-        <Button href={modal.modalurl} variant="contained" color="#000">
+        <Button
+          href={modal.modalurl}
+          variant="contained"
+          color="#000"
+          target="_blank"
+        >
           View Live Website
         </Button>
       </div>

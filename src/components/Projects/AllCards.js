@@ -21,9 +21,11 @@ const useStyles = makeStyles(theme => ({
   },
   paper: {
     textAlign: "center",
+    maxWidth: 345,
     color: theme.palette.text.secondary,
     [theme.breakpoints.down("md")]: {
       width: "100%",
+      maxWidth: "none",
     },
   },
 }))

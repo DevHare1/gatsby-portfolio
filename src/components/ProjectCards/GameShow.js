@@ -26,6 +26,8 @@ const modal = {
     "This was one of my Team Treehouse Front End Techdegree Projects. I built an interactive gameshow app using JavaScript logic. (Hint: All the answers are Frank Sinatra songs)",
   modalurl: "https://devhare1.github.io/Game-Show-App/",
   buttonText: "View Project",
+  modalurl2: "https://github.com/DevHare1/Game-Show-App",
+  buttonText2: "View Code",
 }
 
 //for card
@@ -157,8 +159,21 @@ export default function ButtonBases() {
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>
-        <Button href={modal.modalurl} variant="contained" color="#000">
+        <Button
+          href={modal.modalurl}
+          variant="contained"
+          color="#000"
+          target="_blank"
+        >
           {modal.buttonText}
+        </Button>
+        <Button
+          href={modal.modalurl2}
+          variant="contained"
+          color="#000"
+          target="_blank"
+        >
+          {modal.buttonText2}
         </Button>
       </div>
     </div>

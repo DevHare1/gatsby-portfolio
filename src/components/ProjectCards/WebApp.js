@@ -26,6 +26,8 @@ const modal = {
     "This was one of my Team Treehouse Front End Techdegree Projects. I built a Web App Dashboard using CSS and a little JavaScript. This project was more asthetic than functional.",
   modalurl: "https://devhare1.github.io/WebApp-Dashboard",
   buttonText: "View Project",
+  modalurl2: "https://github.com/DevHare1/WebApp-Dashboard",
+  buttonText2: "View Code",
 }
 
 //for card
@@ -157,8 +159,21 @@ export default function ButtonBases() {
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>
-        <Button href={modal.modalurl} variant="contained" color="#000">
+        <Button
+          href={modal.modalurl}
+          variant="contained"
+          color="#000"
+          target="_blank"
+        >
           {modal.buttonText}
+        </Button>
+        <Button
+          href={modal.modalurl2}
+          variant="contained"
+          color="#000"
+          target="_blank"
+        >
+          {modal.buttonText2}
         </Button>
       </div>
     </div>

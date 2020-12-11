@@ -26,6 +26,8 @@ const modal = {
     "This was one of my Team Treehouse Front End Techdegree Projects. I built a Photo Gallery using flexbox and used jquery to create a lightbox when photos are clicked. I also created a search function using JavaScript based on image titles.",
   modalurl: "https://devhare1.github.io/Interactive-Photo-Gallery/",
   buttonText: "View Project",
+  modalurl2: "https://github.com/DevHare1/Interactive-Photo-Gallery",
+  buttonText2: "View Code",
 }
 
 //for card
@@ -157,8 +159,21 @@ export default function ButtonBases() {
       <h2 id="simple-modal-title">{modal.modalTitle}</h2>
       <p id="simple-modal-description">{modal.modalDescription}</p>
       <div className={classes.button}>
-        <Button href={modal.modalurl} variant="contained" color="#000">
+        <Button
+          href={modal.modalurl}
+          variant="contained"
+          color="#000"
+          target="_blank"
+        >
           {modal.buttonText}
+        </Button>
+        <Button
+          href={modal.modalurl2}
+          variant="contained"
+          color="#000"
+          target="_blank"
+        >
+          {modal.buttonText2}
         </Button>
       </div>
     </div>
