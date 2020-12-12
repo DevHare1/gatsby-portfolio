@@ -9,7 +9,7 @@ import Project from "../components/ProjectDiv"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import { Helmet } from "react-helmet"
-import Screenshot from "../images/Screen-shot.png"
+import Screenshot from "../../static/Screen-shot.png"
 
 import Navbar from "../components/Navbar"
 
