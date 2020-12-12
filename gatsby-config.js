@@ -7,6 +7,10 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: `Devan Hare's Portfolio`,
+    description:
+      "This is the portfolio of Devan Hare. I'm a web developer who's seeking a front end position using React.",
+    author: "Devan Hare",
+    image: "images/screenshot.png",
   },
   /* Your site config here */
   plugins: [
@@ -20,6 +24,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-smoothscroll`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-theme-material-ui`,
       options: {
