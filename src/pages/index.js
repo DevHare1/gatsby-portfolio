@@ -36,14 +36,14 @@ export default function Home({ data }) {
           name="description"
           content="This is the portfolio of Devan Hare. I'm a web developer who's seeking a front end position using React."
         />
-        <meta name="og:url" content="https://www.devanhare.com" />
-        <meta name="og:title" content="Devan Hare's Portfolio" />
+        <meta property="og:url" content="https://www.devanhare.com" />
+        <meta property="og:title" content="Devan Hare's Portfolio" />
         <meta
-          name="og:description"
+          property="og:description"
           content="This is the portfolio of Devan Hare. I'm a web developer who's seeking a front end position using React."
         />
-        <meta name="og:image" content={Screenshot} />
-        <meta name="og:type" content="website" />
+        <meta property="og:image" content={Screenshot} />
+        <meta property="og:type" content="website" />
         <link rel="canonical" href="http://devanhare.com" />
       </Helmet>
       <div className={classes.site}>
