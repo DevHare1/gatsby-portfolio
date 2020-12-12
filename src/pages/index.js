@@ -8,6 +8,7 @@ import Contact from "../components/Contact"
 import Project from "../components/ProjectDiv"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import SEO from "../components/SEO"
 
 import Navbar from "../components/Navbar"
 
@@ -26,23 +27,26 @@ export default function Home({ data }) {
   const classes = useStyles()
 
   return (
-    <ThemeProvider theme={theme}>
-      <div className={classes.site}>
-        <div className={classes.cover}>
-          <Navbar />
-          <BackgroundImage
-            Tag={`section`}
-            id={`test`}
-            fluid={data.background.childImageSharp.fluid}
-          >
-            <Header data={data} />
-          </BackgroundImage>
+    <div>
+      <SEO />
+      <ThemeProvider theme={theme}>
+        <div className={classes.site}>
+          <div className={classes.cover}>
+            <Navbar />
+            <BackgroundImage
+              Tag={`section`}
+              id={`test`}
+              fluid={data.background.childImageSharp.fluid}
+            >
+              <Header data={data} />
+            </BackgroundImage>
+          </div>
+          <About />
+          <Project />
+          <Contact />
         </div>
-        <About />
-        <Project />
-        <Contact />
-      </div>
-    </ThemeProvider>
+      </ThemeProvider>
+    </div>
   )
 }
 
