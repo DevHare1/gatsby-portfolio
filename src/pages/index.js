@@ -8,7 +8,6 @@ import Contact from "../components/Contact"
 import Project from "../components/ProjectDiv"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import SEO from "../components/seo"
 
 import Navbar from "../components/Navbar"
 
