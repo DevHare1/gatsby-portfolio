@@ -11,7 +11,7 @@ import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
   timelineText: {
-    marginBottom: 200,
+    marginBottom: 201,
   },
   lineItem: {
     color: "#e0ad01",
