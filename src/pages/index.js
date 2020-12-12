@@ -8,7 +8,8 @@ import Contact from "../components/Contact"
 import Project from "../components/ProjectDiv"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import SEO from "../components/SEO"
+import { Helmet } from "react-helmet"
+import Screenshot from "../images/screenshot.png"
 
 import Navbar from "../components/Navbar"
 
@@ -27,26 +28,40 @@ export default function Home({ data }) {
   const classes = useStyles()
 
   return (
-    <div>
-      <SEO />
-      <ThemeProvider theme={theme}>
-        <div className={classes.site}>
-          <div className={classes.cover}>
-            <Navbar />
-            <BackgroundImage
-              Tag={`section`}
-              id={`test`}
-              fluid={data.background.childImageSharp.fluid}
-            >
-              <Header data={data} />
-            </BackgroundImage>
-          </div>
-          <About />
-          <Project />
-          <Contact />
+    <ThemeProvider theme={theme}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Devan Hare's Portfolio</title>
+        <meta
+          name="description"
+          content="This is the portfolio of Devan Hare. I'm a web developer who's seeking a front end position using React."
+        />
+        <meta name="og:url" content="https://www.devanhare.com" />
+        <meta name="og:title" content="Devan Hare's Portfolio" />
+        <meta
+          name="og:description"
+          content="This is the portfolio of Devan Hare. I'm a web developer who's seeking a front end position using React."
+        />
+        <meta name="og:image" content={Screenshot} />
+        <meta name="og:type" content="website" />
+        <link rel="canonical" href="http://devanhare.com" />
+      </Helmet>
+      <div className={classes.site}>
+        <div className={classes.cover}>
+          <Navbar />
+          <BackgroundImage
+            Tag={`section`}
+            id={`test`}
+            fluid={data.background.childImageSharp.fluid}
+          >
+            <Header data={data} />
+          </BackgroundImage>
         </div>
-      </ThemeProvider>
-    </div>
+        <About />
+        <Project />
+        <Contact />
+      </div>
+    </ThemeProvider>
   )
 }
 
