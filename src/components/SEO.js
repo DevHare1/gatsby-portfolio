@@ -13,6 +13,7 @@ function SEO({ description, lang, meta, image: metaImage, title, pathname }) {
             description
             author
             siteUrl
+            image
           }
         }
       }
