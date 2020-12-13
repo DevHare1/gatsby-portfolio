@@ -10,6 +10,8 @@ import GameShowApp from "../ProjectCards/GameShow"
 import RegistrationForm from "../ProjectCards/RegistrationForm"
 import MobileFirst from "../ProjectCards/MobileFirst"
 import WebAppDash from "../ProjectCards/WebApp"
+import HareDevelopment from "../ProjectCards/HareDevelopment"
+import GatsbySite from "../ProjectCards/GatsbySite"
 import APIGen from "../ProjectCards/APIGen"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
@@ -53,6 +55,13 @@ export default function Wordpress() {
       <Grid item sm className={classes.paper}>
         <HareDentCard />
       </Grid>
+      <Grid item sm className={classes.paper}>
+        <HareDevelopment />
+      </Grid>
+      <Grid item sm className={classes.paper}>
+        <GatsbySite />
+      </Grid>
+
       <Grid item sm className={classes.paper}>
         <RegistrationForm />
       </Grid>

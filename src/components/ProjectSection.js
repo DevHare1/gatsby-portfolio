@@ -9,7 +9,8 @@ import AllCards from "./Projects/AllCards"
 import HTMLCards from "./Projects/HTMLCards"
 import CSSCards from "./Projects/CSSCards"
 import JSCards from "./Projects/JSCards"
-import Wordpress from "./Projects/WordpressCards"
+import ClientCards from "./Projects/ClientCards"
+import ReactCards from "./Projects/ReactCards"
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props
@@ -87,14 +88,14 @@ export default function ScrollableTabsButtonAuto() {
           <Tab label="HTML" {...a11yProps(2)} />
           <Tab label="CSS" {...a11yProps(3)} />
           <Tab label="Javascript" {...a11yProps(4)} />
-          <Tab label="React" {...a11yProps(4)} />
+          <Tab label="React" {...a11yProps(5)} />
         </Tabs>
       </div>
       <TabPanel value={value} index={0}>
         <AllCards />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Wordpress />
+        <ClientCards />
       </TabPanel>
       <TabPanel value={value} index={2}>
         <HTMLCards />
@@ -104,6 +105,9 @@ export default function ScrollableTabsButtonAuto() {
       </TabPanel>
       <TabPanel value={value} index={4}>
         <JSCards />
+      </TabPanel>
+      <TabPanel value={value} index={5}>
+        <ReactCards />
       </TabPanel>
     </div>
   )
