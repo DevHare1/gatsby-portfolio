@@ -23,7 +23,7 @@ const modal = {
   modalAlt: "API Employee Directory Project",
   modalTitle: "API Employee Directory",
   modalDescription:
-    "This was one of my Team Treehouse Front End Techdegree Projects. I built an Employee Directory using a random API generator.",
+    "This was one of my Team Treehouse Front End Techdegree Projects. I built an Employee Directory using a random API generator. (Not optimized for mobile devices)",
   modalurl: "https://devhare1.github.io/API-Directory/",
   buttonText: "View Project",
   modalurl2: "https://github.com/DevHare1/API-Directory",

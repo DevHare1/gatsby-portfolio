@@ -23,7 +23,7 @@ const modal = {
   modalAlt: "Game Show App Project",
   modalTitle: "Game Show App",
   modalDescription:
-    "This was one of my Team Treehouse Front End Techdegree Projects. I built an interactive gameshow app using JavaScript logic. (Hint: All the answers are Frank Sinatra songs)",
+    "This was one of my Team Treehouse Front End Techdegree Projects. I built an interactive gameshow app using JavaScript logic. (Hint: All the answers are Frank Sinatra songs) * Not optimized for mobile devices.",
   modalurl: "https://devhare1.github.io/Game-Show-App/",
   buttonText: "View Project",
   modalurl2: "https://github.com/DevHare1/Game-Show-App",
