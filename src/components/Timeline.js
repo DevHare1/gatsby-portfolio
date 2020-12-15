@@ -11,13 +11,38 @@ import { makeStyles } from "@material-ui/core/styles"
 
 const useStyles = makeStyles(theme => ({
   timelineText: {
-    marginBottom: 201,
+    marginBottom: 200,
   },
   lineItem: {
     color: "#e0ad01",
   },
-  secondaryTail: {
-    backgroundColor: theme.palette.secondary.main,
+  secondaryTail1: {
+    backgroundColor: "#feb76d",
+  },
+  secondaryTail2: {
+    backgroundColor: "#ee7364",
+  },
+  secondaryTail3: {
+    backgroundColor: "#c06e7d",
+  },
+  secondaryTail4: {
+    backgroundColor: "#ee7364",
+  },
+  secondaryTail5: {
+    backgroundColor: "#feb76d",
+  },
+  secondaryTail6: {
+    backgroundColor: "#ee7364",
+  },
+  timeHead: {
+    marginTop: -5,
+    marginBottom: 5,
+    color: "#000",
+    [theme.breakpoints.down("xs")]: {
+      paddingBottom: "10%",
+      fontSize: 20,
+      marginBottom: 0,
+    },
   },
 }))
 
@@ -33,9 +58,12 @@ export default function OppositeContentTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot variant="outlined" color="primary" />
-            <TimelineConnector className={classes.secondaryTail} />
+            <TimelineConnector className={classes.secondaryTail1} />
           </TimelineSeparator>
           <TimelineContent>
+            <Typography variant="h5" className={classes.timeHead}>
+              Where it All Started
+            </Typography>
             <Typography className={classes.timelineText}>
               Began learning about web development, marketing, and SEO,
               primarily out of a need to market a book that I wrote and
@@ -49,9 +77,12 @@ export default function OppositeContentTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot variant="outlined" color="primary" />
-            <TimelineConnector className={classes.secondaryTail} />
+            <TimelineConnector className={classes.secondaryTail2} />
           </TimelineSeparator>
           <TimelineContent>
+            <Typography variant="h5" className={classes.timeHead}>
+              Team Treehouse
+            </Typography>
             <Typography className={classes.timelineText}>
               Decided to move forward with development as a career path and
               started the Frontend Web Development Tech Degree at Team
@@ -65,9 +96,12 @@ export default function OppositeContentTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot variant="outlined" color="primary" />
-            <TimelineConnector className={classes.secondaryTail} />
+            <TimelineConnector className={classes.secondaryTail3} />
           </TimelineSeparator>
           <TimelineContent>
+            <Typography variant="h5" className={classes.timeHead}>
+              Hare Development
+            </Typography>
             <Typography className={classes.timelineText}>
               After completing my Tech Degree I founded Hare Development and
               started Freelancing. I mostly used Wordpress or an HTML stack to
@@ -81,9 +115,12 @@ export default function OppositeContentTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot variant="outlined" color="primary" />
-            <TimelineConnector className={classes.secondaryTail} />
+            <TimelineConnector className={classes.secondaryTail4} />
           </TimelineSeparator>
           <TimelineContent>
+            <Typography variant="h5" className={classes.timeHead}>
+              Square Six
+            </Typography>
             <Typography className={classes.timelineText}>
               Began working for Square Six in downtown Siloam Springs, AR.
               Blake, the owner of the company contacted me to help with a
@@ -98,9 +135,12 @@ export default function OppositeContentTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot variant="outlined" color="primary" />
-            <TimelineConnector className={classes.secondaryTail} />
+            <TimelineConnector className={classes.secondaryTail5} />
           </TimelineSeparator>
           <TimelineContent>
+            <Typography variant="h5" className={classes.timeHead}>
+              Continued Learning
+            </Typography>
             <Typography className={classes.timelineText}>
               Shortly after starting at Square Six, I became even more motivated
               to expand my development knowledge and started adding frameworks
@@ -115,9 +155,12 @@ export default function OppositeContentTimeline() {
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot variant="outlined" color="primary" />
-            <TimelineConnector className={classes.secondaryTail} />
+            <TimelineConnector className={classes.secondaryTail6} />
           </TimelineSeparator>
           <TimelineContent>
+            <Typography variant="h5" className={classes.timeHead}>
+              To be Continued
+            </Typography>
             <Typography>
               I'm constantly learning and growing full time as a developer. If
               I'm not working on a project, I'm brushing up or learning

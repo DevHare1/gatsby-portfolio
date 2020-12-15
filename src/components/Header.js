@@ -1,17 +1,27 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import Img from "gatsby-image"
+import { Typography } from "@material-ui/core"
+import "./header.css"
 
 const useStyles = makeStyles(theme => ({
-  coverLogo: {
+  coverDiv: {
+    padding: "4%",
+    backgroundColor: "#000",
+    marginBottom: "none",
+  },
+  coverTypography: {
     display: "block",
     marginLeft: "auto",
     marginRight: "auto",
-    paddingTop: "13%",
-    paddingBottom: "8%",
-    width: "80%",
-    maxWidth: 1080,
-    [theme.breakpoints.down("sm")]: {
+    textAlign: "center",
+    paddingTop: "14%",
+    paddingBottom: "10%",
+
+    width: "90%",
+    color: "#f2f2f2",
+    maxWidth: 1248,
+    [theme.breakpoints.down("md")]: {
       paddingTop: "20%",
       paddingBottom: "15%",
     },
@@ -20,14 +30,30 @@ const useStyles = makeStyles(theme => ({
       paddingBottom: "20%",
     },
   },
+  type: {
+    fontSize: "70px",
+    fontWeight: 800,
+    [theme.breakpoints.down("md")]: {
+      fontSize: "50px",
+      fontWeight: 500,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "28px",
+      fontWeight: 500,
+    },
+  },
 }))
 
-export default function Header({ data }) {
+export default function Header() {
   const classes = useStyles()
   return (
-    <div id="top" className="coverDiv">
-      <div className={classes.coverLogo}>
-        <Img fluid={data.logo.childImageSharp.fluid} atl="logo" />
+    <div id="top" className={classes.coverDiv}>
+      <div className={classes.coverTypography}>
+        <Typography id="test" variant="h1" className={classes.type}>
+          Front End Developer, based in Northwest Arkansas, who is passionate
+          about using technology to turn a good idea into a quality user
+          experience.
+        </Typography>
       </div>
     </div>
   )

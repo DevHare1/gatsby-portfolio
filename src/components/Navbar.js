@@ -18,8 +18,29 @@ const useStyles = makeStyles(theme => ({
       margin: "auto 8px",
     },
   },
-  menuButton: {
-    color: "#303030",
+  menuButton1: {
+    color: "#feea9f",
+    fontSize: 18,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+    },
+  },
+  menuButton2: {
+    color: "#feb76d",
+    fontSize: 18,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+    },
+  },
+  menuButton3: {
+    color: "#ee7364",
+    fontSize: 18,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 16,
+    },
+  },
+  menuButton4: {
+    color: "#c06e7d",
     fontSize: 18,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
@@ -41,7 +62,7 @@ const useStyles = makeStyles(theme => ({
     marginBottom: 0,
   },
   app: {
-    backgroundColor: "#f1f1f1",
+    backgroundColor: "#000",
   },
 }))
 
@@ -60,7 +81,7 @@ export default function Navbar() {
                   onClick={() => scrollTo("#top")}
                   role="button"
                 >
-                  <Typography variant="h6" className={classes.menuButton}>
+                  <Typography variant="h6" className={classes.menuButton1}>
                     Home
                   </Typography>
                 </div>
@@ -69,7 +90,7 @@ export default function Navbar() {
                   onClick={() => scrollTo("#about")}
                   role="button"
                 >
-                  <Typography variant="h6" className={classes.menuButton}>
+                  <Typography variant="h6" className={classes.menuButton2}>
                     About
                   </Typography>
                 </div>
@@ -78,7 +99,7 @@ export default function Navbar() {
                   onClick={() => scrollTo("#portfolio")}
                   role="button"
                 >
-                  <Typography variant="h6" className={classes.menuButton}>
+                  <Typography variant="h6" className={classes.menuButton3}>
                     Portfolio
                   </Typography>
                 </div>
@@ -88,7 +109,7 @@ export default function Navbar() {
                   onClick={() => scrollTo("#contact")}
                   role="button"
                 >
-                  <Typography variant="h6" className={classes.menuButton}>
+                  <Typography variant="h6" className={classes.menuButton4}>
                     Contact
                   </Typography>
                 </div>

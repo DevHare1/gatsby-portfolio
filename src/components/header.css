@@ -1,0 +1,11 @@
+#test {
+  /*
+        Ensure background is added first
+        */
+  background: url(../images/merry-christmas.jpg);
+
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}

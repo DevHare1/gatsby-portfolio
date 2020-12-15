@@ -6,13 +6,14 @@ import { makeStyles } from "@material-ui/core/styles"
 const useStyles = makeStyles(theme => ({
   projectsHead: {
     textAlign: "center",
-    fontWeight: 200,
+    fontWeight: 500,
     paddingTop: "14vh",
     fontSize: "2rem",
     marginRight: "auto",
     marginLeft: "auto",
     paddingBottom: "3%",
     maxWidth: 1080,
+    color: "#000",
   },
   projectSect: {
     paddingBottom: "2%",

@@ -33,7 +33,7 @@ export default function Contact() {
   return (
     <div className={classes.contact}>
       <div className={classes.contactSect} id="contact">
-        <Typography variant="h6" color="secondary">
+        <Typography variant="h6" color="primary">
           Let's Connect
         </Typography>
         <a href="tel: (737)932-4800">

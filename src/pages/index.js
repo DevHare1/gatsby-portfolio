@@ -7,7 +7,6 @@ import About from "../components/AboutDiv"
 import Contact from "../components/Contact"
 import Project from "../components/ProjectDiv"
 import { graphql } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
 import { Helmet } from "react-helmet"
 import Screenshot from "../../static/Screen-shot.png"
 
@@ -17,7 +16,7 @@ const useStyles = makeStyles({
   cover: {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    minHeight: "100vh",
+    //minHeight: "100vh",
     [theme.breakpoints.down("lg")]: {
       minHeight: "40vh",
     },
@@ -49,13 +48,7 @@ export default function Home({ data }) {
       <div className={classes.site}>
         <div className={classes.cover}>
           <Navbar />
-          <BackgroundImage
-            Tag={`section`}
-            id={`test`}
-            fluid={data.background.childImageSharp.fluid}
-          >
-            <Header data={data} />
-          </BackgroundImage>
+          <Header data={data} />
         </div>
         <About />
         <Project />
@@ -71,13 +64,6 @@ export const query = graphql`
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    background: file(relativePath: { eq: "merry-christmas.jpg" }) {
-      childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
