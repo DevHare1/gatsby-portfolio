@@ -36,10 +36,10 @@ export default function Home({ data }) {
           content="Front End Developer, based in Northwest Arkansas, who is passionate about using technology to turn a good idea into a quality user experience."
         />
         <meta property="og:url" content="https://www.devanhare.com" />
-        <meta property="og:title" content="Devan Hare's Portfolio" />
+        <meta property="og:title" content="Portfolio - Devan Hare" />
         <meta
           property="og:description"
-          content="This is the portfolio of Devan Hare. I'm a web developer who's seeking a front end position using React."
+          content="Front End Developer, based in Northwest Arkansas, who is passionate about using technology to turn a good idea into a quality user experience."
         />
         <meta property="og:image" content={Screenshot} />
         <meta property="og:type" content="website" />
