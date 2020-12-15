@@ -9,7 +9,7 @@ import { Typography } from "@material-ui/core"
 
 const useStyles = makeStyles({
   contact: {
-    backgroundColor: "#f1f1f1",
+    backgroundColor: "lightgrey",
   },
   contactSect: {
     maxWidth: 1080,
@@ -17,8 +17,8 @@ const useStyles = makeStyles({
     marginTop: "10%",
     marginRight: "auto",
     marginLeft: "auto",
-    paddingBottom: 7,
-    paddingTop: 10,
+    paddingBottom: 10,
+    paddingTop: 15,
   },
 
   socialLink: {

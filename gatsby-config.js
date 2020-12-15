@@ -6,8 +6,8 @@
 const path = require(`path`)
 module.exports = {
   siteMetadata: {
-    title: `Devan Hare's Portfolio`,
-    description: `This is the portfolio of Devan Hare. I'm a web developer who's seeking a front end position using React.`,
+    title: `Portfolio - Devan Hare`,
+    description: `Front End Developer, based in Northwest Arkansas, who is passionate about using technology to turn a good idea into a quality user experience.`,
     author: `Devan Hare`,
     siteUrl: `https://www.devanhare.com`,
     image: `static/Screen-shot.png`,
