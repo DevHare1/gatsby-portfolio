@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles"
 import { Toolbar, Typography, AppBar } from "@material-ui/core"
 import "../pages/index"
 import scrollTo from "gatsby-plugin-smoothscroll"
+import { motion } from "framer-motion"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -21,6 +22,7 @@ const useStyles = makeStyles(theme => ({
   menuButton1: {
     color: "#feea9f",
     fontSize: 18,
+    fontWeight: 500,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -28,6 +30,7 @@ const useStyles = makeStyles(theme => ({
   menuButton2: {
     color: "#feb76d",
     fontSize: 18,
+    fontWeight: 500,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -35,6 +38,7 @@ const useStyles = makeStyles(theme => ({
   menuButton3: {
     color: "#ee7364",
     fontSize: 18,
+    fontWeight: 500,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -42,6 +46,7 @@ const useStyles = makeStyles(theme => ({
   menuButton4: {
     color: "#c06e7d",
     fontSize: 18,
+    fontWeight: 500,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
@@ -63,6 +68,7 @@ const useStyles = makeStyles(theme => ({
   },
   app: {
     backgroundColor: "#000",
+    boxShadow: "0px 2px 3px #303030",
   },
 }))
 
@@ -72,51 +78,82 @@ export default function Navbar() {
   return (
     <div className={classes.root}>
       <React.Fragment>
-        <div className={classes.tool}>
-          <AppBar position="fixed" className={classes.app}>
-            <Toolbar>
-              <div className={classes.navDiv}>
-                <div
-                  className={classes.menuDiv}
-                  onClick={() => scrollTo("#top")}
-                  role="button"
-                >
-                  <Typography variant="h6" className={classes.menuButton1}>
-                    Home
-                  </Typography>
-                </div>
-                <div
-                  className={classes.menuDiv}
-                  onClick={() => scrollTo("#about")}
-                  role="button"
-                >
-                  <Typography variant="h6" className={classes.menuButton2}>
-                    About
-                  </Typography>
-                </div>
-                <div
-                  className={classes.menuDiv}
-                  onClick={() => scrollTo("#portfolio")}
-                  role="button"
-                >
-                  <Typography variant="h6" className={classes.menuButton3}>
-                    Portfolio
-                  </Typography>
-                </div>
+        <motion.div
+          initial={{ y: -60 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 2 }}
+        >
+          <div className={classes.tool}>
+            <AppBar position="fixed" className={classes.app}>
+              <Toolbar>
+                <div className={classes.navDiv}>
+                  <motion.div
+                    className={classes.menuDiv}
+                    whileHover={{ scale: [1, 1.2, 1, 1.2] }}
+                    whileTap={{ scale: 0.8 }}
+                    onClick={() => scrollTo("#top")}
+                    role="button"
+                  >
+                    <motion.Typography
+                      className={classes.menuButton1}
+                      whileHover={{ color: "#f2f2f2" }}
+                      variant="h6"
+                    >
+                      Home
+                    </motion.Typography>
+                  </motion.div>
 
-                <div
-                  className={classes.menuDiv}
-                  onClick={() => scrollTo("#contact")}
-                  role="button"
-                >
-                  <Typography variant="h6" className={classes.menuButton4}>
-                    Contact
-                  </Typography>
+                  <motion.div
+                    className={classes.menuDiv}
+                    whileHover={{ scale: [1, 1.2, 1, 1.2] }}
+                    whileTap={{ scale: 0.8 }}
+                    onClick={() => scrollTo("#about")}
+                    role="button"
+                  >
+                    <motion.Typography
+                      whileHover={{ color: "#f2f2f2" }}
+                      variant="h6"
+                      className={classes.menuButton2}
+                    >
+                      About
+                    </motion.Typography>
+                  </motion.div>
+                  <motion.div
+                    className={classes.menuDiv}
+                    whileHover={{ scale: [1, 1.2, 1, 1.2] }}
+                    whileTap={{ scale: 0.8 }}
+                    onClick={() => scrollTo("#portfolio")}
+                    role="button"
+                  >
+                    <motion.Typography
+                      whileHover={{ color: "#f2f2f2" }}
+                      variant="h6"
+                      className={classes.menuButton3}
+                    >
+                      Portfolio
+                    </motion.Typography>
+                  </motion.div>
+
+                  <motion.div
+                    className={classes.menuDiv}
+                    whileHover={{ scale: [1, 1.2, 1, 1.2] }}
+                    whileTap={{ scale: 0.8 }}
+                    onClick={() => scrollTo("#contact")}
+                    role="button"
+                  >
+                    <motion.Typography
+                      whileHover={{ color: "#f2f2f2" }}
+                      variant="h6"
+                      className={classes.menuButton4}
+                    >
+                      Contact
+                    </motion.Typography>
+                  </motion.div>
                 </div>
-              </div>
-            </Toolbar>
-          </AppBar>
-        </div>
+              </Toolbar>
+            </AppBar>
+          </div>
+        </motion.div>
       </React.Fragment>
     </div>
   )

@@ -52,6 +52,7 @@ export default function Home({ data }) {
         </div>
         <About />
         <Project />
+
         <Contact />
       </div>
     </ThemeProvider>

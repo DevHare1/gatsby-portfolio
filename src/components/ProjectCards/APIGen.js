@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography"
 import APIGen from "../../images/api.png"
 import Modal from "@material-ui/core/Modal"
 import Button from "@material-ui/core/Button"
+import motion from "framer-motion"
 
 //for modal
 function getModalStyle() {

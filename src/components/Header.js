@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core/styles"
 import Img from "gatsby-image"
 import { Typography } from "@material-ui/core"
 import "./header.css"
+import { motion } from "framer-motion"
 
 const useStyles = makeStyles(theme => ({
   coverDiv: {
@@ -49,11 +50,17 @@ export default function Header() {
   return (
     <div id="top" className={classes.coverDiv}>
       <div className={classes.coverTypography}>
-        <Typography id="test" variant="h1" className={classes.type}>
-          Front End Developer, based in Northwest Arkansas, who is passionate
-          about using technology to turn a good idea into a quality user
-          experience.
-        </Typography>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          <Typography id="test" variant="h1" className={classes.type}>
+            Front End Developer, based in Northwest Arkansas, who is passionate
+            about using technology to turn a good idea into a quality user
+            experience.
+          </Typography>
+        </motion.div>
       </div>
     </div>
   )

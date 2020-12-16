@@ -2,6 +2,7 @@ import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import OppositeContentTimeline from "../components/Timeline"
 import { Typography } from "@material-ui/core"
+import { motion } from "framer-motion"
 
 const useStyles = makeStyles(theme => ({
   aboutSect: {
@@ -35,7 +36,14 @@ export default function Home() {
   return (
     <div className={classes.aboutDiv}>
       <div className={classes.aboutSect} id="about">
-        <h2 className={classes.aboutHead}>My Development Journey</h2>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5 }}
+          className={classes.aboutHead}
+        >
+          My Development Journey
+        </motion.h2>
         <OppositeContentTimeline />
       </div>
     </div>
