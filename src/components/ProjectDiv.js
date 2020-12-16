@@ -16,6 +16,11 @@ const useStyles = makeStyles(theme => ({
     paddingBottom: "3%",
     maxWidth: 1080,
     color: "#000",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "26px",
+      width: "90%",
+      paddingTop: "10vh",
+    },
   },
   projectSect: {
     paddingBottom: "2%",

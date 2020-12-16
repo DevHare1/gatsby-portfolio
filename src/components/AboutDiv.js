@@ -23,6 +23,8 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 1080,
     marginTop: "1px",
     [theme.breakpoints.down("xs")]: {
+      fontSize: "26px",
+      width: "90%",
       paddingTop: "10vh",
     },
   },
