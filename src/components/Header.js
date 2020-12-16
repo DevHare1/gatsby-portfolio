@@ -26,8 +26,8 @@ const useStyles = makeStyles(theme => ({
       paddingBottom: "30%",
     },
     [theme.breakpoints.down("xs")]: {
-      paddingTop: "80%",
-      paddingBottom: "80%",
+      paddingTop: "70%",
+      paddingBottom: "85%",
     },
   },
   type: {
