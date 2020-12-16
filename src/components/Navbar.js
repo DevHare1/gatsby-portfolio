@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton1: {
     color: "#feea9f",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 500,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton2: {
     color: "#feb76d",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 500,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton3: {
     color: "#ee7364",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 500,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
   },
   menuButton4: {
     color: "#c06e7d",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 500,
     [theme.breakpoints.down("sm")]: {
       fontSize: 16,
@@ -67,8 +67,14 @@ const useStyles = makeStyles(theme => ({
     marginBottom: 0,
   },
   app: {
+    paddingTop: 10,
+    paddingBottom: 10,
     backgroundColor: "#000",
     boxShadow: "0px 2px 3px #303030",
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: 5,
+      paddingBottom: 5,
+    },
   },
 }))
 

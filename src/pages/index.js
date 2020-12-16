@@ -50,7 +50,7 @@ export default function Home({ data }) {
           <Navbar />
           <Header data={data} />
         </div>
-        <About />
+        <About data={data} />
         <Project />
 
         <Contact />
@@ -61,7 +61,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    logo: file(relativePath: { eq: "my-logo.png" }) {
+    about: file(relativePath: { eq: "devan-hare.png" }) {
       childImageSharp {
         fluid(maxWidth: 1000) {
           ...GatsbyImageSharpFluid

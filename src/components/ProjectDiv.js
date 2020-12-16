@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function Home() {
+export default function Project() {
   const classes = useStyles()
   const controls = useAnimation()
   const [ref, InView, entry] = useInView()

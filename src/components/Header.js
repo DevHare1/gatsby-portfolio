@@ -1,6 +1,5 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import Img from "gatsby-image"
 import { Typography } from "@material-ui/core"
 import "./header.css"
 import { motion } from "framer-motion"
@@ -57,7 +56,7 @@ export default function Header() {
           transition={{ duration: 2 }}
         >
           <Typography id="test" variant="h1" className={classes.type}>
-            Front End Developer, based in Northwest Arkansas, who is passionate
+            Front-End Developer, based in Northwest Arkansas, who is passionate
             about using technology to turn a good idea into a quality user
             experience.
           </Typography>

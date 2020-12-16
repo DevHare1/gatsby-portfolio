@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Timeline from "@material-ui/lab/Timeline"
 import TimelineItem from "@material-ui/lab/TimelineItem"
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator"
@@ -8,14 +8,6 @@ import TimelineDot from "@material-ui/lab/TimelineDot"
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent"
 import Typography from "@material-ui/core/Typography"
 import { makeStyles } from "@material-ui/core/styles"
-import { useInView, enter, InView } from "react-intersection-observer"
-import {
-  motion,
-  useAnimation,
-  controls,
-  useViewportScroll,
-  useTransform,
-} from "framer-motion"
 import TimelineMay from "./TimelineComps/May2017"
 import TimelineJune from "./TimelineComps/June2019"
 import TimelineMarch from "./TimelineComps/March2020"

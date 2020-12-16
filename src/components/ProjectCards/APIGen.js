@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography"
 import APIGen from "../../images/api.png"
 import Modal from "@material-ui/core/Modal"
 import Button from "@material-ui/core/Button"
-import motion from "framer-motion"
 
 //for modal
 function getModalStyle() {
@@ -136,7 +135,7 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-export default function ButtonBases() {
+export default function APIGen() {
   const classes = useStyles()
   // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle)
