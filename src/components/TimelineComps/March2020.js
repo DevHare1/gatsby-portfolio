@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     color: "#000",
     [theme.breakpoints.down("xs")]: {
       paddingBottom: "10%",
-      fontSize: 20,
+      fontSize: 18,
       marginBottom: 0,
     },
   },
@@ -41,7 +41,7 @@ export default function TimelineMay() {
       transition={{ duration: 2 }}
       variants={{
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: "48%" },
+        hidden: { opacity: 0, x: "23%" },
       }}
     >
       <Typography variant="h5" className={classes.timeHead}>
