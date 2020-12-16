@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import SimpleTabs from "../components/ProjectSection"
 import "../styles.css"
 import { makeStyles } from "@material-ui/core/styles"
+import { useInView, enter, InView } from "react-intersection-observer"
+import { motion, useAnimation } from "framer-motion"
 
 const useStyles = makeStyles(theme => ({
   projectsHead: {
@@ -25,10 +27,32 @@ const useStyles = makeStyles(theme => ({
 
 export default function Home() {
   const classes = useStyles()
+  const controls = useAnimation()
+  const [ref, InView, entry] = useInView()
+
+  useEffect(() => {
+    if (InView) {
+      controls.start("visible")
+    } else {
+      controls.start("hidden")
+    }
+  }, [controls, InView])
 
   return (
     <div className={classes.projectSect} id="portfolio">
-      <h2 className={classes.projectsHead}>Portfolio</h2>
+      <motion.h2
+        ref={ref}
+        animate={controls}
+        initial="hidden"
+        transition={{ duration: 2 }}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+        className={classes.projectsHead}
+      >
+        Portfolio
+      </motion.h2>
       <SimpleTabs />
     </div>
   )

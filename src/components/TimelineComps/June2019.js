@@ -41,7 +41,7 @@ export default function TimelineMay() {
       transition={{ duration: 2 }}
       variants={{
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: "-50%" },
+        hidden: { opacity: 0, x: "-48%" },
       }}
     >
       <Typography variant="h5" className={classes.timeHead}>

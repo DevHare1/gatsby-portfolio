@@ -65,7 +65,7 @@ export default function OppositeContentTimeline() {
       <Timeline align="alternate">
         <TimelineItem>
           <TimelineOppositeContent>
-            <Typography color="textSecondary">May 2017</Typography>
+            <Typography color="themePrimary">May 2017</Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot variant="outlined" color="primary" />

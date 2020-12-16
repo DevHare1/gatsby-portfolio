@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import OppositeContentTimeline from "../components/Timeline"
 import { Typography } from "@material-ui/core"
-import { motion } from "framer-motion"
+import { useInView, enter, InView } from "react-intersection-observer"
+import { motion, useAnimation } from "framer-motion"
 
 const useStyles = makeStyles(theme => ({
   aboutSect: {
@@ -32,14 +33,29 @@ const useStyles = makeStyles(theme => ({
 
 export default function Home() {
   const classes = useStyles()
+  const controls = useAnimation()
+  const [ref, InView, entry] = useInView()
+
+  useEffect(() => {
+    if (InView) {
+      controls.start("visible")
+    } else {
+      controls.start("hidden")
+    }
+  }, [controls, InView])
 
   return (
     <div className={classes.aboutDiv}>
       <div className={classes.aboutSect} id="about">
         <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          ref={ref}
+          animate={controls}
+          initial="hidden"
+          transition={{ duration: 2 }}
+          variants={{
+            visible: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
           className={classes.aboutHead}
         >
           My Development Journey

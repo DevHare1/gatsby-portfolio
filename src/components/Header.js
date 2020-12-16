@@ -10,6 +10,7 @@ const useStyles = makeStyles(theme => ({
     padding: "4%",
     backgroundColor: "#000",
     marginBottom: "none",
+    boxShadow: "0px 5px 0px #303030",
   },
   coverTypography: {
     display: "block",
