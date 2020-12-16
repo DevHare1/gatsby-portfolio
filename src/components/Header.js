@@ -17,18 +17,17 @@ const useStyles = makeStyles(theme => ({
     marginRight: "auto",
     textAlign: "center",
     paddingTop: "14%",
-    paddingBottom: "10%",
-
+    paddingBottom: "13%",
     width: "90%",
     color: "#f2f2f2",
     maxWidth: 1248,
     [theme.breakpoints.down("md")]: {
-      paddingTop: "20%",
-      paddingBottom: "15%",
+      paddingTop: "35%",
+      paddingBottom: "30%",
     },
     [theme.breakpoints.down("xs")]: {
-      paddingTop: "30%",
-      paddingBottom: "20%",
+      paddingTop: "80%",
+      paddingBottom: "80%",
     },
   },
   type: {
