@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
     color: "#000",
     [theme.breakpoints.down("xs")]: {
       paddingBottom: "10%",
-      fontSize: 20,
+      fontSize: 18,
       marginBottom: 0,
       marginTop: 0,
     },
