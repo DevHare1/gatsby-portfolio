@@ -13,6 +13,7 @@ const useStyles = makeStyles(theme => ({
     marginLeft: "auto",
     [theme.breakpoints.down("xs")]: {
       display: "block",
+      paddingTop: "8vh",
     },
   },
   aboutPhotoDiv: {
@@ -30,7 +31,6 @@ const useStyles = makeStyles(theme => ({
       width: "80%",
       marginRight: "auto",
       marginLeft: "auto",
-      borderBottom: "3px solid black",
     },
   },
   aboutSect: {
