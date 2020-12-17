@@ -140,15 +140,15 @@ export default function AboutMe({ data }) {
             That’s always stuck with me. It’s easy for me to get caught up in
             what I’m doing and forget the real reason behind my career. The way
             that I’ve combatted the struggle of a work/family balance is by
-            removing as many fruitless hobbies as I can and making the most of
-            moments where I peel my eyes away from the computer. This may seem
-            out of place on a portfolio, but I believe it’s one of the things
-            that makes a big difference in the attitude of a coworker.
+            removing fruitless hobbies and making the most of moments where I
+            step away from the computer. This may seem out of place on a
+            portfolio, but I believe it’s one of the things that makes a big
+            difference in the attitude of a coworker.
             <br></br>
             <br></br>
-            I’m currently working on a contract basis with a company and
-            freelancing. If you’d like to work together in any capacity, please
-            connect and I’ll be happy to discuss any potential opportunities.
+            I’m currently working on a contract basis and freelancing. If you’d
+            like to work together in any capacity, please connect and I’ll be
+            happy to discuss any potential opportunities.
           </motion.Typography>
         </div>
       </div>
