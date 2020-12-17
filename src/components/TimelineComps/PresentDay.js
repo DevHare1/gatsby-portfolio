@@ -47,7 +47,8 @@ export default function TimelineMay() {
       <Typography>
         I'm constantly learning and growing full time as a developer. If I'm not
         working on a project, I'm brushing up or learning something new. My goal
-        is to eventually begin a career working full time with a solid company.
+        is to eventually continue my career working full time with a solid
+        company.
       </Typography>
     </motion.div>
   )
