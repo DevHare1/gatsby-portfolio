@@ -1,6 +1,6 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { Toolbar, Typography, AppBar } from "@material-ui/core"
+import { Toolbar, AppBar } from "@material-ui/core"
 import "../pages/index"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { motion } from "framer-motion"
@@ -100,13 +100,13 @@ export default function Navbar() {
                     onClick={() => scrollTo("#top")}
                     role="button"
                   >
-                    <motion.Typography
+                    <motion.p
                       className={classes.menuButton1}
                       whileHover={{ color: "#f2f2f2" }}
                       variant="h6"
                     >
                       Home
-                    </motion.Typography>
+                    </motion.p>
                   </motion.div>
 
                   <motion.div
@@ -116,13 +116,13 @@ export default function Navbar() {
                     onClick={() => scrollTo("#about")}
                     role="button"
                   >
-                    <motion.Typography
+                    <motion.p
                       whileHover={{ color: "#f2f2f2" }}
                       variant="h6"
                       className={classes.menuButton2}
                     >
                       About
-                    </motion.Typography>
+                    </motion.p>
                   </motion.div>
                   <motion.div
                     className={classes.menuDiv}
@@ -131,13 +131,13 @@ export default function Navbar() {
                     onClick={() => scrollTo("#portfolio")}
                     role="button"
                   >
-                    <motion.Typography
+                    <motion.p
                       whileHover={{ color: "#f2f2f2" }}
                       variant="h6"
                       className={classes.menuButton3}
                     >
                       Portfolio
-                    </motion.Typography>
+                    </motion.p>
                   </motion.div>
 
                   <motion.div
@@ -147,13 +147,13 @@ export default function Navbar() {
                     onClick={() => scrollTo("#contact")}
                     role="button"
                   >
-                    <motion.Typography
+                    <motion.p
                       whileHover={{ color: "#f2f2f2" }}
                       variant="h6"
                       className={classes.menuButton4}
                     >
                       Contact
-                    </motion.Typography>
+                    </motion.p>
                   </motion.div>
                 </div>
               </Toolbar>

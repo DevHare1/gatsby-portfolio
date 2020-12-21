@@ -50,7 +50,7 @@ export default function OppositeContentTimeline() {
             <Typography color="textSecondary">May 2017</Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot variant="outlined" color="textPrimary" />
+            <TimelineDot variant="outlined" color="primary" />
             <TimelineConnector className={classes.secondaryTail1} />
           </TimelineSeparator>
           <TimelineContent>
@@ -62,7 +62,7 @@ export default function OppositeContentTimeline() {
             <Typography color="textSecondary">June 2019</Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot variant="outlined" color="textPrimary" />
+            <TimelineDot variant="outlined" color="primary" />
             <TimelineConnector className={classes.secondaryTail2} />
           </TimelineSeparator>
           <TimelineContent>
@@ -74,7 +74,7 @@ export default function OppositeContentTimeline() {
             <Typography color="textSecondary">March 2020</Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot variant="outlined" color="textPrimary" />
+            <TimelineDot variant="outlined" color="primary" />
             <TimelineConnector className={classes.secondaryTail3} />
           </TimelineSeparator>
           <TimelineContent>
@@ -86,7 +86,7 @@ export default function OppositeContentTimeline() {
             <Typography color="textSecondary">September 2020</Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot variant="outlined" color="textPrimary" />
+            <TimelineDot variant="outlined" color="primary" />
             <TimelineConnector className={classes.secondaryTail4} />
           </TimelineSeparator>
           <TimelineContent>
@@ -98,7 +98,7 @@ export default function OppositeContentTimeline() {
             <Typography color="textSecondary">November 2020</Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot variant="outlined" color="textPrimary" />
+            <TimelineDot variant="outlined" color="primary" />
             <TimelineConnector className={classes.secondaryTail5} />
           </TimelineSeparator>
           <TimelineContent>
@@ -110,7 +110,7 @@ export default function OppositeContentTimeline() {
             <Typography color="textSecondary">Present Day</Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineDot variant="outlined" color="textPrimary" />
+            <TimelineDot variant="outlined" color="primary" />
             <TimelineConnector className={classes.secondaryTail6} />
           </TimelineSeparator>
           <TimelineContent>

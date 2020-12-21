@@ -1,8 +1,7 @@
 import React, { useEffect } from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import { useInView, enter, InView } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
-import { Typography } from "@material-ui/core"
 import Img from "gatsby-image"
 
 const useStyles = makeStyles(theme => ({
@@ -71,7 +70,7 @@ const useStyles = makeStyles(theme => ({
 export default function AboutMe({ data }) {
   const classes = useStyles()
   const controls = useAnimation()
-  const [ref, InView, entry] = useInView()
+  const [ref, InView] = useInView()
 
   useEffect(() => {
     if (InView) {
@@ -104,7 +103,7 @@ export default function AboutMe({ data }) {
           Hello, I'm Devan Hare.
         </motion.h2>
         <div className={classes.typeDiv}>
-          <motion.Typography
+          <motion.p
             ref={ref}
             animate={controls}
             initial="hidden"
@@ -149,7 +148,7 @@ export default function AboutMe({ data }) {
             I’m currently working on a contract basis and freelancing. If you’d
             like to work together in any capacity, please connect and I’ll be
             happy to discuss any potential opportunities.
-          </motion.Typography>
+          </motion.p>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import SimpleTabs from "../components/ProjectSection"
 import "../styles.css"
 import { makeStyles } from "@material-ui/core/styles"
-import { useInView, enter, InView } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
 
 const useStyles = makeStyles(theme => ({
@@ -33,7 +33,7 @@ const useStyles = makeStyles(theme => ({
 export default function Project() {
   const classes = useStyles()
   const controls = useAnimation()
-  const [ref, InView, entry] = useInView()
+  const [ref, InView] = useInView()
 
   useEffect(() => {
     if (InView) {

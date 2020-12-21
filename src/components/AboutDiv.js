@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { makeStyles } from "@material-ui/core/styles"
 import OppositeContentTimeline from "../components/Timeline"
-import { useInView, enter, InView } from "react-intersection-observer"
+import { useInView } from "react-intersection-observer"
 import { motion, useAnimation } from "framer-motion"
 import AboutMe from "./AboutMe"
 
@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => ({
 export default function About({ data }) {
   const classes = useStyles()
   const controls = useAnimation()
-  const [ref, InView, entry] = useInView()
+  const [ref, InView] = useInView()
 
   useEffect(() => {
     if (InView) {
