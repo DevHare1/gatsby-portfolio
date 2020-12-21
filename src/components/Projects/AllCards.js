@@ -13,6 +13,7 @@ import WebAppDash from "../ProjectCards/WebApp"
 import HareDevelopment from "../ProjectCards/HareDevelopment"
 import GatsbySite from "../ProjectCards/GatsbySite"
 import APIGen from "../ProjectCards/APIGen"
+import WebStyleGuide from "../ProjectCards/WebStyleGuide"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
 
@@ -70,6 +71,9 @@ export default function Wordpress() {
       </Grid>
       <Grid item sm className={classes.paper}>
         <GameShowApp />
+      </Grid>
+      <Grid item sm className={classes.paper}>
+        <WebStyleGuide />
       </Grid>
       <Grid item sm className={classes.paper}>
         <MobileFirst />

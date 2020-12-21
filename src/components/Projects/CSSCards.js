@@ -3,6 +3,7 @@ import RegistrationForm from "../ProjectCards/RegistrationForm"
 import MobileFirst from "../ProjectCards/MobileFirst"
 import WebAppDash from "../ProjectCards/WebApp"
 import APIGen from "../ProjectCards/APIGen"
+import WebStyleGuide from "../ProjectCards/WebStyleGuide"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
 
@@ -38,6 +39,9 @@ export default function Wordpress() {
       </Grid>
       <Grid item sm className={classes.paper}>
         <APIGen />
+      </Grid>
+      <Grid item sm className={classes.paper}>
+        <WebStyleGuide />
       </Grid>
     </Grid>
   )
