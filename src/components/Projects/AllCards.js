@@ -12,6 +12,7 @@ import MobileFirst from "../ProjectCards/MobileFirst"
 import WebAppDash from "../ProjectCards/WebApp"
 import HareDevelopment from "../ProjectCards/HareDevelopment"
 import GatsbySite from "../ProjectCards/GatsbySite"
+import ReactMovieSearch from "../ProjectCards/ReactMovieSearch"
 import APIGen from "../ProjectCards/APIGen"
 import WebStyleGuide from "../ProjectCards/WebStyleGuide"
 import { makeStyles } from "@material-ui/core"
@@ -62,7 +63,9 @@ export default function Wordpress() {
       <Grid item sm className={classes.paper}>
         <GatsbySite />
       </Grid>
-
+      <Grid item sm className={classes.paper}>
+        <ReactMovieSearch />
+      </Grid>
       <Grid item sm className={classes.paper}>
         <RegistrationForm />
       </Grid>
