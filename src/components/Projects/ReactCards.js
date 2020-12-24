@@ -1,7 +1,7 @@
 import React from "react"
 import GatsbySite from "../ProjectCards/GatsbySite"
 import ReactMovieSearch from "../ProjectCards/ReactMovieSearch"
-
+import OfficeQuotes from "../ProjectCards/OfficeQuotes"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
 
@@ -31,6 +31,9 @@ export default function Wordpress() {
       </Grid>
       <Grid item sm className={classes.paper}>
         <ReactMovieSearch />
+      </Grid>
+      <Grid item sm className={classes.paper}>
+        <OfficeQuotes />
       </Grid>
     </Grid>
   )
