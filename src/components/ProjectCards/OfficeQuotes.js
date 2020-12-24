@@ -23,7 +23,7 @@ const modal = {
   modalAlt: "The Office Quote Generator Project",
   modalTitle: "The Office Quote Generator",
   modalDescription:
-    "For this practice project I built a quote generator that pulls a random quote from an array. My family are big fans of The Office and it was a cool opportunity to add a qr code linked to this project in a Christmas card.",
+    "For this practice project I built a quote generator that pulls a random quote from an array. My family are big fans of The Office and it was a cool opportunity to add a QR code linked to this project in a Christmas card.",
   modalurl: "https://office-quote-generator.vercel.app/",
   buttonText: "View Project",
   modalurl2: "https://github.com/DevHare1/office-quote-generator",
