@@ -16,6 +16,7 @@ import ReactMovieSearch from "../ProjectCards/ReactMovieSearch"
 import OfficeQuotes from "../ProjectCards/OfficeQuotes"
 import APIGen from "../ProjectCards/APIGen"
 import WebStyleGuide from "../ProjectCards/WebStyleGuide"
+import TicTacToe from "../ProjectCards/TicTacToe"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
 
@@ -69,6 +70,9 @@ export default function Wordpress() {
       </Grid>
       <Grid item sm className={classes.paper}>
         <OfficeQuotes />
+      </Grid>
+      <Grid item sm className={classes.paper}>
+        <TicTacToe />
       </Grid>
       <Grid item sm className={classes.paper}>
         <RegistrationForm />
