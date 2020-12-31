@@ -3,6 +3,8 @@ import PhotoGallery from "../ProjectCards/PhotoGallery"
 import WebAppDash from "../ProjectCards/WebApp"
 import GameShowApp from "../ProjectCards/GameShow"
 import APIGen from "../ProjectCards/APIGen"
+import ReactMovieSearch from "../ProjectCards/ReactMovieSearch"
+import OfficeQuotes from "../ProjectCards/OfficeQuotes"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
 
@@ -38,6 +40,12 @@ export default function Wordpress() {
       </Grid>
       <Grid item sm className={classes.paper}>
         <APIGen />
+      </Grid>
+      <Grid item sm className={classes.paper}>
+        <OfficeQuotes />
+      </Grid>
+      <Grid item sm className={classes.paper}>
+        <ReactMovieSearch />
       </Grid>
     </Grid>
   )
