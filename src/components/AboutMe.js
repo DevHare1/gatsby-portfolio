@@ -10,9 +10,11 @@ const useStyles = makeStyles(theme => ({
     display: "flex",
     marginRight: "auto",
     marginLeft: "auto",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("md")]: {
+      width: "90%",
+    },
+    [theme.breakpoints.down("sm")]: {
       display: "block",
-      paddingTop: "8vh",
     },
   },
   aboutPhotoDiv: {
@@ -23,11 +25,18 @@ const useStyles = makeStyles(theme => ({
     marginRight: "auto",
     marginLeft: "auto",
     width: "100%",
+    maxWidth: 500,
+    maxHeight: "90vh",
+    paddingTop: "10vh",
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "none",
+      maxHeight: "none",
+    },
   },
   image: {
     width: "100%",
-    [theme.breakpoints.down("xs")]: {
-      width: "80%",
+    [theme.breakpoints.down("sm")]: {
+      width: "90%",
       marginRight: "auto",
       marginLeft: "auto",
     },
@@ -41,15 +50,14 @@ const useStyles = makeStyles(theme => ({
     paddingLeft: "5%",
     fontWeight: 500,
     fontSize: "2rem",
-    paddingTop: "10vh",
-    paddingBottom: "1%",
+    paddingTop: "12vh",
+    paddingBottom: ".5%",
     maxWidth: 1080,
     marginTop: "1px",
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down("sm")]: {
       marginRight: "auto",
       marginLeft: "auto",
       fontSize: "26px",
-      width: "90%",
       paddingTop: "6vh",
     },
   },
@@ -58,11 +66,10 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 1080,
     width: "100%",
     padding: "0 5% 5% 5%",
-    fontSize: "16px",
-    [theme.breakpoints.down("xs")]: {
+    fontSize: "15px",
+    [theme.breakpoints.down("sm")]: {
       marginRight: "auto",
       marginLeft: "auto",
-      width: "90%",
     },
   },
 }))
@@ -125,12 +132,6 @@ export default function AboutMe({ data }) {
             in this field, I’ve continually learned and tried to become better
             than I was yesterday. There’s no better feeling than facing a
             problem and figuring out a solution.
-            <br></br>
-            <br></br>I have several years of experience in the world outside of
-            development as a trainer and manager, so I know what it takes to get
-            a job done. This also helps me relate with clients. I can put myself
-            in their shoes and ask the right questions to problem solve and
-            figure out their priorities.
             <br></br>
             <br></br>
             As much as I enjoy development, I’m even more excited about my
