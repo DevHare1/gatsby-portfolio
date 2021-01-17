@@ -113,11 +113,11 @@ export default function AboutMe({ data }) {
               hidden: { opacity: 0 },
             }}
           >
-            I am a Front-End Web Developer who specializes in React. I have
-            experience managing multiple projects at a time, and I’m determined
-            to be the best developer I can. I believe time management and
-            organization are key to meeting deadlines and producing the best
-            version of a project.
+            I am a Front-End Web Developer who specializes in React, among other
+            things. I have experience managing multiple projects at a time, and
+            I’m determined to be the best developer I can. I believe time
+            management and organization are key to meeting deadlines and
+            producing the best version of a project.
             <br></br>
             <br></br>
             I’m fueled by my passion for understanding the nuances of the many
