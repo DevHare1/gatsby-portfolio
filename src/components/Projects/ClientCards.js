@@ -3,7 +3,6 @@ import ThePointeCard from "../ProjectCards/ThePointe"
 import WalkerCard from "../ProjectCards/WalkerEyeCare"
 import OverlandCard from "../ProjectCards/OverlandRentals"
 import LeahCard from "../ProjectCards/LeahCarvajal"
-import HareDentCard from "../ProjectCards/HareDent"
 import JohnsCard from "../ProjectCards/JohnsFamily"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
@@ -43,9 +42,6 @@ export default function Wordpress() {
       </Grid>
       <Grid item sm className={classes.paper}>
         <JohnsCard />
-      </Grid>
-      <Grid item sm className={classes.paper}>
-        <HareDentCard />
       </Grid>
     </Grid>
   )
