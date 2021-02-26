@@ -23,7 +23,7 @@ const modal = {
   modalAlt: "Hare Dent Repair Project",
   modalTitle: "Hare Dent Repair",
   modalDescription:
-    "For this project I built a website, optimized for SEO, and I’m currently running an AdWords campaign on a monthly basis. This was a marketing project for a dent repair business located in Duncan, OK. It was built with Gatsby and React.",
+    "For this project I built a website, optimized for SEO, and I’m currently running an AdWords campaign on a monthly basis. This was a marketing project for a dent repair business located in Duncan, OK. It was built with Webflow.",
   modalurl: "https://haredentrepair.com/",
 }
 
