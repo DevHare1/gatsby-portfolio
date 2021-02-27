@@ -4,7 +4,7 @@ import WalkerCard from "../ProjectCards/WalkerEyeCare"
 import OverlandCard from "../ProjectCards/OverlandRentals"
 import LeahCard from "../ProjectCards/LeahCarvajal"
 import JohnsCard from "../ProjectCards/JohnsFamily"
-import HareDentCard from "../ProjectDiv/HareDent"
+import HareDentCard from "../ProjectCards/HareDent"
 import { makeStyles } from "@material-ui/core"
 import Grid from "@material-ui/core/Grid"
 
