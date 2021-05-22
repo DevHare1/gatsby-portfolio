@@ -50,8 +50,7 @@ export default function TimelineMay() {
       <Typography className={classes.timelineText}>
         Shortly after starting at Square Six, I became even more motivated to
         expand my development knowledge and started adding frameworks like React
-        and Angular to my toolbelt. This site is actually built with Gatsby and
-        deployed with Vercel.
+        and to my toolbelt. This site is actually built with Gatsby.
       </Typography>
     </motion.div>
   )
